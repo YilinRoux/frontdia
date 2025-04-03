@@ -1,0 +1,153 @@
+/* Nueva fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0a0e17;
+  color: #d6d6d6;
+}
+
+.App-header {
+  background-color: #0077b6;
+  padding: 20px;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.upload-container {
+  background-color: #16213e;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 187, 255, 0.3);
+}
+
+.upload-container button {
+  background-color: #00b4d8;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.upload-container button:hover {
+  background-color: #0096c7;
+  transform: scale(1.05);
+}
+
+.upload-container button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #00b4d8;
+}
+
+.gallery {
+  background-color: #16213e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 187, 255, 0.5);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.image-card {
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.img-preview {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.resolution-controls {
+  display: flex;
+  padding: 8px;
+  background: #222831;
+  border-radius: 8px;
+}
+
+.resolution-controls button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 6px;
+  background: #ff6b6b;
+  border: 1px solid #888;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.resolution-controls button.active {
+  background: #0077b6;
+  color: #ffffff;
+  border-color: #0077b6;
+}
+
+.upload-button {
+  padding: 12px;
+  background: #00b4d8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.upload-button:hover {
+  background: #0096c7;
+  transform: scale(1.05);
+}
+
+.upload-button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6b6b;
+  padding: 10px;
+  background: #330000;
+  border-left: 4px solid #ff6b6b;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
